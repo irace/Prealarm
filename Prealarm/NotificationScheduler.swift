@@ -46,7 +46,7 @@ final class NotificationScheduler {
     
     private func content(events: [EKEvent]) -> UNNotificationContent {
         let content = UNMutableNotificationContent()
-        content.title = "Hey! You may need a special alarm"
+        content.title = "⚠️ You may want to set an alarm ⚠️"
         content.body = EventsViewModel(events: events).description
         content.sound = UNNotificationSound.`default`()
         
