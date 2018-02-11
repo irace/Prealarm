@@ -13,4 +13,5 @@ struct Configuration {
     let endHour: Int = 11
     let triggerHour: Int = 20
     let calendars: [EKCalendar]? = nil
+    let ignoreWeekends = true
 }

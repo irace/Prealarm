@@ -27,6 +27,7 @@ final class EventFinder {
         let events = store
             .events(matching: alarmWorthyEventsPredicate(configuration: configuration))
             .filter({ event in
+                // TODO: Filter weekends based on configuration
                 !event.isAllDay
             })
         
